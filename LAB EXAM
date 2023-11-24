@@ -1,0 +1,49 @@
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          backgroundColor: Colors.blue, // Set your desired background color
+          title: Padding(
+            padding: const EdgeInsets.all(8.0), // Set your desired padding
+            child: Text('ListView Builder'),
+          ),
+          leading: IconButton(
+            icon: Icon(Icons.window), // Set your desired prefix icon
+            onPressed: () {
+              // Add your onPressed logic here
+            },
+          ),
+           
+        ),
+         body: 
+      ListView(
+        children: const <Widget>[
+          ListTile(
+            leading: Icon(Icons.person),
+            title: Text('Jay-Ann'),
+          ),
+          ListTile(
+            leading: Icon(Icons.menu),
+            title: Text('John'),
+          ),
+          ListTile(
+            leading: Icon(Icons.home),
+            title: Text('Lyn'),
+            
+
+          ),
+        ],
+      ),
+)
+    );
+
+  }
+}
